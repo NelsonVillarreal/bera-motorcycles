@@ -16,8 +16,8 @@ export const Header = () => {
           </Link>
 
           <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
-            <Link href="/home">Inicio</Link>
-            <Link href="/water">Productos</Link>
+            <Link href="/">Inicio</Link>
+            <Link href="/products">Productos</Link>
             <Link href="/beyond">Repuestos</Link>
             <Link href="/noticias">Nosotros</Link>
             <Link href="/contato">Contato</Link>

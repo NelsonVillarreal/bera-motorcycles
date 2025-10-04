@@ -1,23 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
-import { Header } from "./components/header";
 import Carousel from "./components/carousel";
-import { Footer } from "./components/header/footer";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Bera Motorcycles Peru</title>
-        <meta name="description" content="Página inicial inspirada na Bera Motorcycles" />
-      </Head>
-
-      <Header />
-
       <Carousel />
-
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">Categorias</h2>
@@ -87,7 +74,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-        <Footer />
     </>
   );
 }

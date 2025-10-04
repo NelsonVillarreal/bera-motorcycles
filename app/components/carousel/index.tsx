@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { gbrRojo, kavakNegra, sbrRoja } from '@/app/assets/carrossel';
+import { gbrRojo, kavakNegra, sbrRoja } from '../../assets';
 
 export default function Carousel() {
     const slides = [
