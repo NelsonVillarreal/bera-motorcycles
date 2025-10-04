@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { Header } from "./components/header";
 import Carousel from "./components/carousel";
+import { Footer } from "./components/header/footer";
 
 export default function Home() {
   return (
@@ -86,45 +87,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="bg-black text-gray-400 py-12 mt-20">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-          <div>
-            <h4 className="text-white font-bold mb-4">Bera Motorcycles</h4>
-            <p className="text-sm">
-              Potência, inovação e emoção em cada jornada.
-            </p>
-          </div>
-          <div>
-            <h4 className="text-white font-bold mb-4">Links rápidos</h4>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2">
-                <FaInstagram className="text-white" />
-                <Link href="https://www.instagram.com/bera.peru/?igsh=czN6OTM5YW55Nnhr#" target="_blank">Instagram</Link>
-              </li>
-              <li className="flex items-center gap-2">
-                <FaWhatsapp className="text-white" />
-                <Link href="https://wa.me/51929690044" target="_blank">WhatsApp</Link>
-              </li>
-              <li className="flex items-center gap-2">
-                <FaFacebook className="text-white" />
-                <Link href="/beyond">Facebook</Link>
-              </li>
-              <li className="flex items-center gap-2">
-                <FaPhone className="text-white" />
-                <Link href="/contato">929 690 044</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-bold mb-4">Redes sociais</h4>
-            <p>Siga a Bera Motorcycles no Instagram, YouTube e Facebook.</p>
-          </div>
-        </div>
-        <div className="text-center text-sm text-gray-600 mt-8">
-          © {new Date().getFullYear()} Bera Motorcycles.
-        </div>
-      </footer>
+        <Footer />
     </>
   );
 }
