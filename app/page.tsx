@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { Header } from "./components/header";
+import Carousel from "./components/carousel";
 import { Footer } from "./components/header/footer";
 
 export default function Home() {
@@ -15,25 +16,7 @@ export default function Home() {
 
       <Header />
 
-      <section
-        className="relative h-screen bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">Bera Motorcycles</h1>
-          <h2 className="text-2xl md:text-3xl mb-6">Land • Water • Beyond</h2>
-          <p className="text-lg md:text-xl mb-8">
-            Heritage. Inovação. Potência.
-          </p>
-          <Link
-            href="/produtos"
-            className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition"
-          >
-            Conheça nossos produtos
-          </Link>
-        </div>
-      </section>
+      <Carousel />
 
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
