@@ -1,32 +1,18 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { Header } from "./components/header";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Bera Motorcycles Brasil — Inspiração</title>
+        <title>Bera Motorcycles Peru</title>
         <meta name="description" content="Página inicial inspirada na Bera Motorcycles" />
       </Head>
 
-      <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <Link href="/">
-            <span className="text-2xl font-bold text-red-600 cursor-pointer">
-              Bera Motorcycles
-            </span>
-          </Link>
-
-          <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
-            <Link href="/land">Land</Link>
-            <Link href="/water">Water</Link>
-            <Link href="/beyond">Beyond</Link>
-            <Link href="/noticias">Notícias</Link>
-            <Link href="/contato">Contato</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <section
         className="relative h-screen bg-cover bg-center flex items-center justify-center"
