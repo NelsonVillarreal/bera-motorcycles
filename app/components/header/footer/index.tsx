@@ -3,13 +3,14 @@ import {
     FaFacebook,
     FaInstagram,
     FaMailBulk,
+    FaMailchimp,
     FaPhone,
     FaWhatsapp
 } from "react-icons/fa"
 
 export const Footer = () => {
     return (
-        <footer className="bg-black text-gray-400 py-12 mt-20">
+        <footer className="bg-black text-gray-400 py-12 mt-20 text-xs md:text-sm">
 
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-12">
 
@@ -51,8 +52,8 @@ export const Footer = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-white font-bold mb-4">Contato</h4>
-                    <ul className="space-y-3">
+                    <h4 className="text-white font-bold mb-4">Contacto</h4>
+                    <ul className="space-y-3 flex-shrink-0">
                         <li className="flex items-center gap-3">
                             <FaPhone className="text-white" />
                             <span>+51 929 690 044</span>
@@ -71,7 +72,7 @@ export const Footer = () => {
                         </li>
                         <li className="flex items-center gap-3">
                             <FaMailBulk className="text-white" />
-                            <Link href="/" target="_blank">by.beraperu@gmail.com</Link>
+                            <Link className="break-all" href="/" target="_blank">by.beraperu@gmail.com</Link>
                         </li>
                     </ul>
                 </div>
