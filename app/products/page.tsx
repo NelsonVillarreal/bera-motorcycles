@@ -1,16 +1,17 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import { gbrRojo, kavakNegra, sbrRoja } from '../assets';
+import Image from 'next/image'
+import Link from 'next/link'
+import { gbrRojo, kavakNegra, sbrRoja } from '../assets'
 
 interface Product {
-    id: number;
-    name: string;
-    price: string;
-    image: string;
+    id: number
+    name: string
+    price: string
+    image: string
 }
 
-const mockProducts: Product[] = [
+export const mockProducts: Product[] = [
     {
         id: 1,
         name: 'Bera BR 150 GTS',
@@ -29,15 +30,13 @@ const mockProducts: Product[] = [
         price: 'R$ 17.990,00',
         image: sbrRoja.src,
     },
-];
+]
 
 export default function Products() {
     return (
         <main className="min-h-screen bg-gray-100 py-16 px-6">
-            <div className='mt-25'>
-                <h1 className="text-gray-800 mb-10">
-                    Todos los modelos
-                </h1>
+            <div className="mt-25">
+                <h1 className="text-gray-800 mb-10">Todos los modelos</h1>
 
                 <div className="max-w-7xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {mockProducts.map((product) => (
@@ -60,15 +59,19 @@ export default function Products() {
                                 <h2 className="text-lg font-semibold text-gray-800">
                                     {product.name}
                                 </h2>
-                                <p className="text-red-600 font-bold text-xl mt-2">{product.price}</p>
-                                <button className="mt-4 bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
-                                    Ver detalhes
-                                </button>
+                                <p className="text-red-600 font-bold text-xl mt-2">
+                                    {product.price}
+                                </p>
+                                <Link href={`/products/${product.id}`}>
+                                    <button className="mt-4 bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition w-full">
+                                        Ver detalhes
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
         </main>
-    );
+    )
 }
