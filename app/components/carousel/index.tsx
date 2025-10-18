@@ -2,26 +2,9 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { gbrRojo, kavakNegra, sbrRoja } from '../../assets';
+import { slidesCarousel } from './data';
 
 export default function Carousel() {
-    const slides = [
-        {
-            id: 1,
-            image: gbrRojo,
-            alt: 'gbr rojo',
-        },
-        {
-            id: 2,
-            image: kavakNegra,
-            alt: 'Slide 2',
-        },
-        {
-            id: 3,
-            image: sbrRoja,
-            alt: 'sbr roja',
-        },
-    ];
 
     const autoplayInterval = 6000;
     const showArrows = true;
@@ -31,7 +14,7 @@ export default function Carousel() {
     const [isPlaying, setIsPlaying] = useState(Boolean(autoplayInterval));
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
-    const slidesCount = slides.length;
+    const slidesCount = slidesCarousel.length;
 
     useEffect(() => {
         if (!isPlaying || slidesCount <= 1) return;
@@ -84,21 +67,22 @@ export default function Carousel() {
                 className="flex transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${index * 100}%)` }}
             >
-                {slides.map((s, i) => (
-                    <div key={s.id} className="min-w-full flex items-center justify-center bg-black h-[50vh]">
-                        <div className="relative w-[500px] h-[50vh]">
-                            <Image
-                                src={s.image}
-                                alt={s.alt}
-                                fill
-                                priority={i === 0}
-                                quality={90}
-                                className="object-contain"
-                                sizes="(max-width: 768px) 100vw, 500px"
-                            />
-                        </div>
-                    </div>
-
+                {slidesCarousel.map((s, i) => (
+                    <div
+                    key={s.id}
+                    className="relative min-w-full h-[40vh] sm:h-[60vh] lg:h-[80vh] bg-black"
+                  >
+                    <Image
+                      src={s.image}
+                      alt={s.alt}
+                      fill
+                      priority={i === 0}
+                      quality={90}
+                      sizes="100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  
                 ))}
             </div>
             {showArrows && slidesCount > 1 && (
@@ -144,7 +128,7 @@ export default function Carousel() {
             )}
             {showDots && slidesCount > 1 && (
                 <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-                    {slides.map((_, i) => (
+                    {slidesCarousel.map((_, i) => (
                         <button
                             key={i}
                             onClick={() => goTo(i)}

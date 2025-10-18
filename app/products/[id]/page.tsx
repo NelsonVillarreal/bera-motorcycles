@@ -3,7 +3,7 @@
 import { useParams, useRouter } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { mockProducts } from '../page'
+import { mockProducts } from '../components/data'
 
 export default function ProductDetail() {
     const { id } = useParams()
