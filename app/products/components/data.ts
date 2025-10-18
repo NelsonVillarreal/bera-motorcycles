@@ -1,6 +1,6 @@
-import gbrRojo  from '../../assets/dt-rojo.png'
-import kavakNegra  from '../../assets/kavak-negra.png'
-import sbrRoja  from '../../assets/sbr-roja.png'
+import gbrRojo  from '../../assets/images/motos_sem_fondo/gbr_200_sem_fundo/gbr_vermelho_200.png'
+import kavakNegra  from '../../assets/images/motos_sem_fondo/kavak_150_sem_fundo/kavak_preta_150.png'
+import sbrRoja  from '../../assets/images/motos_sem_fondo/milan_150_sem_fondo/milan_azul.png'
 
 interface Product {
     id: number
