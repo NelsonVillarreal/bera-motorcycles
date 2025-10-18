@@ -18,7 +18,6 @@ export default function FeaturedMotorcycles() {
 
   return (
     <section className="relative bg-white py-12 px-4 md:px-8">
-      {/* Cabeçalho */}
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
           Motos em destaque
@@ -47,7 +46,6 @@ export default function FeaturedMotorcycles() {
         </Link>
       </div>
 
-      {/* Botões de navegação */}
       <button
         onClick={() => scroll("left")}
         className="absolute left-2 top-1/2 -translate-y-1/2 bg-white shadow-md hover:bg-gray-100 rounded-full p-3 z-10"
@@ -60,8 +58,6 @@ export default function FeaturedMotorcycles() {
       >
         <FaChevronRight className="text-gray-700" />
       </button>
-
-      {/* Carrossel */}
       <div
         ref={scrollRef}
         className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar"
