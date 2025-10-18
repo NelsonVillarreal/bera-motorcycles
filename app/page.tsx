@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Carousel />
       <FeaturedMotorcycles />
-
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">Nossa História</h2>

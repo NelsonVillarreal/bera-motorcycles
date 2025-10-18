@@ -1,42 +1,43 @@
+import gbrPreta from "../../assets/images/motos_sem_fondo/gbr_200_sem_fundo/gbr_preto_200.png"
+import sbrPreta from "../../assets/images/motos_sem_fondo/sbr_150_sem_fundo/sbr_nova_150_preta.png"
+import dtPreta from "../../assets/images/motos_sem_fondo/dt_br_200_sem_fundo/dt_negro_200.png"
+import kavakPreta from "../../assets/images/motos_sem_fondo/kavak_150_sem_fundo/kavak_preta_150.png"
+import milanPreta from "../../assets/images/motos_sem_fondo/milan_150_sem_fondo/milan_preta.png"
+
 export const featuredMotorcycles = [
     {
-      name: "CRF 300F",
-      price: "A partir de R$ 24.027",
-      image:
-        "/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CRF-300F-Vermelho-Extreme-Red_0.webp",
-      link: "/motos/off-road/crf-300f",
+      name: "GBR 200",
+      price: "A partir de $ 2.000",
+      image: gbrPreta.src,
+      link: "/#",
     },
     {
-      name: "CB 650R E-Clutch",
-      price: "A partir de R$ 58.270",
-      image:
-        "/motos/sites/hda/files/2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Vermelho-Perolizado_0.webp",
-      link: "/motos/street/naked/cb-650r",
+      name: "SBR 150",
+      price: "A partir de $ 2.000",
+      image: sbrPreta.src,
+      link: "/#",
     },
     {
-      name: "Hornet 500",
-      price: "A partir de R$ 43.040",
-      image:
-        "/motos/sites/hda/files/2025-08/Imagem-home-honda-Hornet500-Vermelha-Lateral.webp",
-      link: "/motos/street/naked/hornet-500",
+      name: "DT 200",
+      price: "A partir de $ 2.000",
+      image: dtPreta.src,
+      link: "/#",
     },
     {
-      name: "NX 500",
-      price: "A partir de R$ 45.800",
-      image:
-        "/motos/sites/hda/files/2025-08/Imagem-home-honda-NX500-Vermelha-Lateral_0.webp",
-      link: "/motos/adventure/crossover/nx-500",
+      name: "Kavak 150",
+      price: "A partir de R$ 2.000",
+      image: kavakPreta.src,
+        link: "/#",
     },
     {
-      name: "Honda ADV",
-      price: "A partir de R$ 25.020",
-      image:
-        "/motos/sites/hda/files/2025-08/Imagem-home-Honda-ADV-Vermelha-Lateral.webp",
-      link: "/motos/adventure/scooter/honda-adv",
+      name: "Milan 150",
+      price: "A partir de $ 2.000",
+      image: milanPreta.src,
+        link: "/#",
     },
     {
       name: "Todos os modelos",
-      link: "/motos/modelos",
+      link: "/products",
       last: true,
     },
   ];
