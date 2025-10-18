@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Carousel from "./components/carousel";
+import ServicesHeroGrid from "./components/financial-services";
 import FeaturedMotorcycles from "./components/featured-motorcycles";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Carousel />
       <FeaturedMotorcycles />
+      <ServicesHeroGrid />
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">Nossa História</h2>
