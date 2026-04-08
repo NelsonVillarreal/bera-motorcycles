@@ -33,8 +33,6 @@ export const Header = () => {
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
           <Link href="/">Inicio</Link>
           <Link href="/products">Productos</Link>
-          <Link href="/beyond">Repuestos</Link>
-          <Link href="/noticias">Nosotros</Link>
           <Link href="/contact">Contato</Link>
         </nav>
       </div>
@@ -45,9 +43,7 @@ export const Header = () => {
           <nav className="flex flex-col space-y-4 px-6 py-4 text-gray-700 font-medium">
             <Link href="/" onClick={() => setMenuOpen(false)}>Inicio</Link>
             <Link href="/products" onClick={() => setMenuOpen(false)}>Productos</Link>
-            <Link href="/beyond" onClick={() => setMenuOpen(false)}>Repuestos</Link>
-            <Link href="/noticias" onClick={() => setMenuOpen(false)}>Nosotros</Link>
-            <Link href="/contato" onClick={() => setMenuOpen(false)}>Contato</Link>
+            <Link href="/contact" onClick={() => setMenuOpen(false)}>Contato</Link>
           </nav>
         </div>
       )}
