@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Header } from "./components/header";
+import Head from "next/head";
+import { Footer } from "./components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Head>
+          <title>Bera Motorcycles Peru</title>
+          <meta name="description" content="Página inicial inspirada na Bera Motorcycles" />
+        </Head>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
