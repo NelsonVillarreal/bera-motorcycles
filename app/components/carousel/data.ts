@@ -1,5 +1,5 @@
-import banner1 from '../../assets/carrossel/banner01-1920-1080.png';
-import banner2 from '../../assets/carrossel/banner02-1920-1080.png';
+import banner1 from '../../../public/assets/carrossel/banner01-1920-1080.png';
+import banner2 from '../../../public/assets/carrossel/banner02-1920-1080.png';
 
 export { banner1, banner2 };
 

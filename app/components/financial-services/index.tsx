@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
-import ServiceImg from '../../assets/financial_services/servicos-financeiros.jpg';
-import PostvendaImg from '../../assets/financial_services/posvenda-image.jpeg';
+import ServiceImg from '../../../public/assets/financial_services/servicos-financeiros.jpg';
+import PostvendaImg from '../../../public/assets/financial_services/posvenda-image.jpeg';
 
 type ServiceCard = {
   title: string;
